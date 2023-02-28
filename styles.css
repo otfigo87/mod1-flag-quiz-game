@@ -186,7 +186,7 @@ ul {
     color: rgb(108, 8, 108);
 }
 
-.flags .flag-options ul li.active {
+.flags .flag-options ul li.selected {
     background-color: rgb(108, 8, 108);
     color: white;
 }
@@ -196,7 +196,7 @@ ul {
 }
 
 .flags .flag-options ul li.wrong {
-    background-color: rgb(238, 76, 76);
+    background-color: red;
 }
 
 @media(min-width: 375px) {
