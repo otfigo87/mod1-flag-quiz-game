@@ -1,3 +1,226 @@
-body{
-    background-image: url(img/bg.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
 }
+
+
+html {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 60%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(238 238 238 / .5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Shantell Sans', cursive;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(108, 8, 108);
+    padding: 2rem 0;
+    animation: my-animation 1.2s;
+}
+@keyframes my-animation {
+	from {
+		transform: translateY(-100px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+h3, .count{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: rgb(108, 8, 108);
+    animation: my-animation 2s;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media(min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem ;
+}
+
+.flags .flag-img img {
+    width: 100%;
+    height: 20rem;
+    animation: zoom 3s ease-in infinite;
+}
+
+@keyframes zoom{
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.flag-options {
+    margin-top: 3rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flags .flag-options ul li {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 240px;
+    color: rgb(108, 8, 108);
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem .5rem rgba(0 0 0 / .3);
+    transition: all .1s ease-in-out;
+}
+
+#newGame {
+    border: none;
+    background-color: rgb(108, 8, 108);
+    padding: 1.5rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.score {
+    display: none;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.score .correct,
+.score .incorrect {
+    color: rgb(108, 8, 108);
+}
+
+.flags .flag-options ul li.active {
+    background-color: rgb(108, 8, 108);
+    color: white;
+}
+
+.flags .flag-options ul li.success {
+    background-color: #1eb53a;
+}
+
+.flags .flag-options ul li.wrong {
+    background-color: rgb(238, 76, 76);
+}
+
+@media(min-width: 375px) {
+    h1,
+    h3,
+    .box .count {
+        font-size: 3rem;
+    }
+
+    .flags .flag-img,
+    .flags .flag-options ul {
+        width: 30rem;
+    }
+
+    .flags .flag-options ul li {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+
+.flags .flag-options ul li:hover {
+        background-color: var(--violet);
+        color: var(--white);
