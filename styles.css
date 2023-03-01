@@ -26,24 +26,13 @@ body {
     position: relative;
 }
 
-/* body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(238 238 238 / .5);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-} */
-
 ul {
     list-style: none;
 }
 
 h1 {
     font-family: 'Shantell Sans', cursive;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
     font-size: 2.5rem;
     text-transform: capitalize;
@@ -66,7 +55,7 @@ h3, .count{
     text-decoration: underline;
     color: rgb(108, 8, 108);
     animation: my-animation 2s;
-    font-family: cursive;
+    font-family:  cursive;
 }
 
 .container {
@@ -164,21 +153,36 @@ ul {
     transition: all .1s ease-in-out;
 }
 
-#newGame {
+#newGame, #save {
     border: none;
     background-color: rgb(108, 8, 108);
-    padding: 1.5rem;
+    padding: 1.5rem ;
     color: white;
     cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: bolder;
     letter-spacing: .1rem;
+    transition: all 1.5s ease;
+    margin-top: 35px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+#newGame:hover,
+#save:hover {
+    background-color: rgb(233, 231, 231);
+    color:  rgb(108, 8, 108);
+    border: 2px solid purple;
+    transform: scale(1.09);
+    
 }
 
 .score {
     display: none;
     padding: 2rem;
     border-radius: .5rem;
+    flex-direction: column;
+     animation: my-animation 1.2s;
 }
 
 .score .correct,
@@ -186,10 +190,6 @@ ul {
     color: rgb(108, 8, 108);
 }
 
-.flags .flag-options ul li.selected {
-    background-color: rgb(108, 8, 108);
-    color: white;
-}
 
 .flags .flag-options ul li.success {
     background-color: #1eb53a;
@@ -234,17 +234,42 @@ ul {
     left: 0;
     z-index: -1;
 }
-
+/* For the video background */
 @media(min-aspect-ratio: 16/9) {
     .video-bg {
         width: 100%;
         height: auto;
     }
 }
-
 @media(max-aspect-ratio: 16/9) {
     .video-bg {
         width: auto;
         height: 100%;
     }
 }
+
+input {
+    margin: 0 auto;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    color: purple;
+    font-weight: 700;
+    
+}
+
+input::placeholder {
+    color: grey;
+    font-style: italic;
+    text-align: center;
+}
+h2 {
+    margin: 40px 0 10px 0;
+    color:rgb(6, 53, 53)
+}
+
