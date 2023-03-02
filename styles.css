@@ -31,7 +31,7 @@ ul {
 }
 
 h1 {
-    font-family: 'Shantell Sans', cursive;
+    font-family: play, cursive;
     /* text-decoration: underline; */
     text-align: center;
     font-size: 2.5rem;
@@ -158,18 +158,20 @@ ul {
     background-color: rgb(108, 8, 108);
     padding: 1.5rem ;
     color: white;
-    cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bolder;
     letter-spacing: .1rem;
     transition: all 1.5s ease;
     margin-top: 35px;
     border-radius: 10px;
-    font-family: cursive;
+    font-family: Play;
 }
 
-#newGame:hover,
-#save:hover {
+#newGame {
+    cursor: pointer;
+}
+
+#newGame:hover {
     background-color: rgb(233, 231, 231);
     color:  rgb(108, 8, 108);
     border: 2px solid purple;
@@ -182,7 +184,7 @@ ul {
     padding: 2rem;
     border-radius: .5rem;
     flex-direction: column;
-     animation: my-animation 1.2s;
+    animation: my-animation 1.2s;
 }
 
 .score .correct,
@@ -262,7 +264,20 @@ input {
     font-weight: 700;
     
 }
-
+.box > h2 {
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: italic;
+    color: gold;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    padding: 8px 15px;
+    background-color: rgb(38, 38, 205);
+    animation: zoom 3s ease-in infinite, my-animation 4s;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 input::placeholder {
     color: grey;
     font-style: italic;
@@ -270,6 +285,11 @@ input::placeholder {
 }
 h2 {
     margin: 40px 0 10px 0;
-    color:rgb(6, 53, 53)
+    color:white;
+}
+h3.correct, h3.incorrect {
+    color: rgb(46, 46, 222)!important;
+    font-family: Play!important;
+    font-size: 2.2rem!important;
 }
 
