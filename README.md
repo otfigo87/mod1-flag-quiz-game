@@ -42,7 +42,13 @@ Why not try it yourself? How many have you managed to get right?
 * [BG-AUDIO](https://pixabay.com/music/)
 * [BG-VIDEO](https://elements.envato.com/?cl=header)
 * [API-COUNTRIES](https://restcountries.com)
+* [EMOJIS](https://getemoji.com/)
 * [ANIMATIONS](https://www.w3schools.com/css/css3_animations.asp)
+
+
+## Link:  
+  
+* [Play => live link](https://otfigo87.github.io/mod1-flag-quiz-game/)
 
 ## Next Step:
 
