@@ -3,12 +3,13 @@
 
 ## About:
 
-Think you know all flags? Try this Flags Quiz Game: Test your knowledge on geography and compare your score to others, Guess the flags of 197 countries from Afghanistan to Zimbabwe.
-You'll get one point for every flag you guess correctly!
-Why not try it yourself? How many have you managed to get right?
-
+Think you know all flags? Try this Flags Quiz Game: Test your knowledge on geography and compare your score to others, Guess the flags of 197 countries from Afghanistan to Zimbabwe.   
+You'll get one point for every flag you guess correctly!   
+Why not try it yourself? How many have you managed to get right?  
+   
 ![alt text](img/readme.jpg)
 
+  
 ## Main features :
 
  * Responsive Design.
@@ -23,23 +24,25 @@ Why not try it yourself? How many have you managed to get right?
 
  ## Technology Stack:
 
- * HTML : [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
- * CSS : [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
- * JavaScript : [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+ [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)  
 
- [![git](https://img.shields.io/badge/--F05032?logo=git&logoColor=ffffff)](http://git-scm.com/)
+ [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)  
 
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
+ [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)  
 
-[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)  
+
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)  
+
+ [![git](https://img.shields.io/badge/--F05032?logo=git&logoColor=ffffff)](http://git-scm.com/)  
 
 ## Resources:
 
-[MDN](https://developer.mozilla.org/en-US/)
-[BG-AUDIO](https://pixabay.com/music/)
-[BG-VIDEO](https://elements.envato.com/?cl=header)
-[API-COUNTRIES](https://restcountries.com)
-[ANIMATIONS](https://www.w3schools.com/css/css3_animations.asp)
+* [MDN](https://developer.mozilla.org/en-US/)
+* [BG-AUDIO](https://pixabay.com/music/)
+* [BG-VIDEO](https://elements.envato.com/?cl=header)
+* [API-COUNTRIES](https://restcountries.com)
+* [ANIMATIONS](https://www.w3schools.com/css/css3_animations.asp)
 
 ## Next Step:
 
