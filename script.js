@@ -167,7 +167,7 @@ let audio = document.getElementById("myAudio");
 window.onload = function () {
   audioPlayer.style.display = "none";
 };
-audio.volume = 0.4;
+audio.volume = 0.2;
 
 //Start The Game
 window.addEventListener("load", startGame);
