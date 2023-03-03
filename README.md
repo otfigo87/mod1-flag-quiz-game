@@ -1,5 +1,5 @@
 # Flag-Quiz-Game
-🇧🇷 🇲🇦 🇺🇸 🇦🇺 🇸🇰 🇰🇿 🇵🇭 🇱🇦 🇿🇼 🇧🇭 🏴󠁧󠁢󠁷󠁬󠁳󠁿 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇻🇦...
+🇧🇷 🇲🇦 🇺🇸 🇦🇺 🇸🇰 🇰🇿 🇵🇭 🇱🇦 🇿🇼 🇧🇭 🏴󠁧󠁢󠁷󠁬󠁳󠁿 🇧🇷 🇲🇦 🇺🇸 🇦🇺 🇸🇰 🇰🇿 🇵🇭 🇱🇦 🇿🇼 🇧🇭 🏴󠁧󠁢󠁷󠁬󠁳󠁿 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇻🇦...
 
 ## About:
 
@@ -11,18 +11,37 @@ Why not try it yourself? How many have you managed to get right?
 
 ## Main features :
 
- * responsive Design.
- * random flags for each new game.
- * score for the player.
- * showing number of correct answer.
- * showing number of incorrect answer. 
- * green color for the correct answer.
- * red color for the incorrect answer.
- * save the score.
- * show the board for best scores and players.
+ * Responsive Design.
+ * Random flags for each new game.
+ * Score for the player.
+ * Showing number of correct answer.
+ * Showing number of incorrect answer. 
+ * Green color for the correct answer.
+ * Red color for the incorrect answer.
+ * Save the score.
+ * Show the board for best scores and players.
 
- ## Built With:
+ ## Technology Stack:
 
- * HTML :
- * CSS :
- * JavaScript : 
+ * HTML : [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
+ * CSS : [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
+ * JavaScript : [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+
+ [![git](https://img.shields.io/badge/--F05032?logo=git&logoColor=ffffff)](http://git-scm.com/)
+
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
+
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
+
+## Resources:
+
+[MDN](https://developer.mozilla.org/en-US/)
+[BG-AUDIO](https://pixabay.com/music/)
+[BG-VIDEO](https://elements.envato.com/?cl=header)
+[API-COUNTRIES](https://restcountries.com)
+[ANIMATIONS](https://www.w3schools.com/css/css3_animations.asp)
+
+## Next Step:
+
+Currently, my next step is to develop a mobile version of this game. As technology advances and more people rely on their mobile devices for daily tasks, it's important to ensure that my game is accessible on-the-go. 
+I am excited to take on this challenge and look forward to bringing our app to even more users through a mobile platform.
