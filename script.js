@@ -11,7 +11,6 @@ let correctAns = document.querySelector(".score .correct span");
 let incorrectAns = document.querySelector(".score .incorrect span");
 let btnNewGame = document.querySelector("#newGame");
 let countSpan = document.querySelector(".count>span");
-let countDiv = document.querySelector(".count");
 let scoreBox = document.querySelector(".box");
 let count = 10;//counting down from 10th to 1st question
 countSpan.innerText = count;
@@ -99,8 +98,10 @@ const showResult = () => {
         correctAns.innerHTML = correctAnswers;
         incorrectAns.innerHTML = 10 - correctAnswers;
         scoreBox.innerHTML = "";
-        console.log(correctAnswers);//Player Score
+        // console.log(correctAnswers);//Player Score
         scoreBox.innerHTML = `<h2>Your score is: ${correctAnswers}</h2>`; 
+
+        audio.setAttribute("src", "audio/soft-piano.mp3");
 
     } 
 }
@@ -110,18 +111,19 @@ let board = document.querySelector("#board");
 let saveBtn = document.querySelector("#save");
 let nameInput = document.querySelector("#name");
 let ol = document.createElement("ol")
-// let yourScore = correctAnswers;
+// Score = correctAnswers;
 let highScores = [
-  { name: "Adam", score: 9 },
-  { name: "John", score: 8 },
-  { name: "Maria", score: 10 },
-  { name: "Kim", score: 5 },
+  { name: "Adam", score: 5 },
+  { name: "David", score: 7 },
+  { name: "Maria", score: 8 },
+  { name: "Nadia", score: 3 },
 ];
 
 // you can only click the save button if you enter a name
 nameInput.addEventListener("keydown", () => {
     saveBtn.disabled = !nameInput.value;
     saveBtn.style.cursor = "pointer";
+    saveBtn.classList.add("reuse")
 })
 //save the player name and score
 saveBtn.addEventListener("click", function(e) {
@@ -134,20 +136,38 @@ saveBtn.addEventListener("click", function(e) {
     highScores.sort((player1,player2) => {
         return player2.score - player1.score
     });
-    console.log(highScores);
+    // console.log(highScores);
+    highScores[0].name = `🥇 ${highScores[0].name}`;
+    highScores[1].name = `🥈 ${highScores[1].name}`;
+    highScores[2].name = `🥉 ${highScores[2].name}`;
     board.innerHTML = "";
-    
 
     ol.innerHTML = highScores.map(player => {
-        return `<li>${player.name} - ${player.score}</li>`
-    }).join("")
+        return `<li>${player.name} = ${player.score}</li>`
+    }).join("");
     board.appendChild(ol);
     saveBtn.innerText="Score Saved";
-   scoreBox.innerHTML = `<h2>High Scores</h2>`; 
+    scoreBox.innerHTML = `<h2>Best Players</h2>`; 
+
+    saveBtn.setAttribute("disabled", "true");
+    saveBtn.classList.remove("reuse");
+    saveBtn.style.cursor = "default";
+
+    audio.setAttribute(
+      "src",
+      "audio/happy-day-113985.mp3"
+    );
+   
 
 
 })
 
+//Hide the audio Player / volume
+let audio = document.getElementById("myAudio");
+window.onload = function () {
+  audioPlayer.style.display = "none";
+};
+audio.volume = 0.4;
 
 //Start The Game
 window.addEventListener("load", startGame);
@@ -156,5 +176,6 @@ window.addEventListener("load", startGame);
 btnNewGame.addEventListener('click', () => {
     window.location.reload();
 });
+
 
 

@@ -1,295 +1,322 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&family=Play:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&family=Play:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 html {
-    font-family: 'Play', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    font-size: 60%;
-    scroll-behavior: smooth;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 60%;
+
+  scroll-behavior: smooth;
 }
 
 body {
-    /* background: url(../img/bg.jpg) no-repeat; */
-    background-image: linear-gradient(90deg, rgba(0 0 0 / .5), rgba(255 255 255 / .1));
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    position: relative;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 h1 {
-    font-family: play, cursive;
-    /* text-decoration: underline; */
-    text-align: center;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    color: rgb(108, 8, 108);
-    padding: 2rem 0;
-    animation: my-animation 1.2s;
+  font-family: play, cursive;
+  /* text-decoration: underline; */
+  text-align: center;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: rgb(108, 8, 108);
+  padding: 2rem 0;
+  animation: my-animation 1.2s;
 }
 @keyframes my-animation {
-	from {
-		transform: translateY(-100px);
-	}
-	to {
-		transform: translateY(0px);
-	}
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
-h3, .count{
-    font-size: 2rem;
-    text-transform: capitalize;
-    text-decoration: underline;
-    color: rgb(108, 8, 108);
-    animation: my-animation 2s;
-    font-family:  cursive;
+h3,
+.count {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: rgb(108, 8, 108);
+  animation: my-animation 2s;
+  font-family: cursive;
 }
 
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-@media(min-width: 576px) {
-    .container {
-        width: 540px;
-    }
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
 }
 
-@media(min-width: 768px) {
-    .container {
-        width: 720px;
-    }
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
 }
 
-@media(min-width: 992px) {
-    .container {
-        width: 960px;
-    }
-}
-
-@media(min-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-}
-
-@media(min-width: 1400px) {
-    .container {
-        width: 1320px;
-    }
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
 }
 
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .flags {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
 }
 
 .flags .flag-img img {
-    width: 100%;
-    height: 20rem;
-    animation: zoom 3s ease-in infinite;
+  width: 100%;
+  height: 20rem;
+  animation: zoom 3s ease-in infinite;
 }
 
-@keyframes zoom{
-    0% {
-        transform: scale(1, 1);
-    }
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
 
-    50% {
-        transform: scale(1.1, 1.1);
-    }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
 
-    100% {
-        transform: scale(1, 1);
-    }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .flag-options {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .flags .flag-options ul li {
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    margin-bottom: 1.5rem;
-    background-color: white;
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 240px;
-    color: rgb(108, 8, 108);
-    cursor: pointer;
-    box-shadow: 0 .5rem .5rem .5rem rgba(0 0 0 / .3);
-    transition: all .1s ease-in-out;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 240px;
+  color: rgb(108, 8, 108);
+  cursor: pointer;
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0 0 0 / 0.3);
+  transition: all 0.1s ease-in-out;
 }
 
-#newGame, #save {
-    border: none;
-    background-color: rgb(108, 8, 108);
-    padding: 1.5rem ;
-    color: white;
-    font-size: 1.7rem;
-    font-weight: bolder;
-    letter-spacing: .1rem;
-    transition: all 1.5s ease;
-    margin-top: 35px;
-    border-radius: 10px;
-    font-family: Play;
+#newGame,
+#save,
+.reuse {
+  border: none;
+  background-color: rgb(108, 8, 108);
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  transition: all 1.5s ease;
+  margin-top: 35px;
+  border-radius: 10px;
+  font-family: Play;
 }
 
 #newGame {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-#newGame:hover {
-    background-color: rgb(233, 231, 231);
-    color:  rgb(108, 8, 108);
-    border: 2px solid purple;
-    transform: scale(1.09);
-    
+#newGame:hover,
+.reuse:hover {
+  background-color: rgb(233, 231, 231);
+  color: rgb(108, 8, 108);
+  border: 2px solid purple;
+  transform: scale(1.09);
 }
 
 .score {
-    display: none;
-    padding: 2rem;
-    border-radius: .5rem;
-    flex-direction: column;
-    animation: my-animation 1.2s;
+  display: none;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  animation: my-animation 1.2s;
 }
 
 .score .correct,
 .score .incorrect {
-    color: rgb(108, 8, 108);
+  color: rgb(108, 8, 108);
 }
 
-
 .flags .flag-options ul li.success {
-    background-color: #1eb53a;
+  background-color: #1eb53a;
 }
 
 .flags .flag-options ul li.wrong {
-    background-color: red;
+  background-color: red;
 }
 
-@media(min-width: 375px) {
-    h1,
-    h3,
-    .box .count {
-        font-size: 3rem;
-    }
+@media (min-width: 375px) {
+  h1,
+  h3,
+  .box .count {
+    font-size: 3rem;
+  }
 
-    .flags .flag-img,
-    .flags .flag-options ul {
-        width: 30rem;
-    }
+  .flags .flag-img,
+  .flags .flag-options ul {
+    width: 30rem;
+  }
 
-    .flags .flag-options ul li {
-        width: 100%;
-    }
+  .flags .flag-options ul li {
+    width: 100%;
+  }
 }
 
-@media(min-width: 768px) {
-    h1 {
-        font-size: 4rem;
-    }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
-
 
 .flags .flag-options ul li:hover {
-        background-color: rgb(108, 8, 108);
-        color: white;
+  background-color: rgb(108, 8, 108);
+  color: white;
 }
 
 .video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 /* For the video background */
-@media(min-aspect-ratio: 16/9) {
-    .video-bg {
-        width: 100%;
-        height: auto;
-    }
+@media (min-aspect-ratio: 16/9) {
+  .video-bg {
+    width: 100%;
+    height: auto;
+  }
 }
-@media(max-aspect-ratio: 16/9) {
-    .video-bg {
-        width: auto;
-        height: 100%;
-    }
+@media (max-aspect-ratio: 16/9) {
+  .video-bg {
+    width: auto;
+    height: 100%;
+  }
 }
 
 input {
-    margin: 0 auto;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    color: purple;
-    font-weight: 700;
-    
+  margin: 0 auto;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  color: purple;
+  font-weight: 700;
 }
 .box > h2 {
-    margin: 0 auto;
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 2rem;
-    font-style: italic;
-    color: gold;
-    border: 1px solid yellow;
-    border-radius: 20px;
-    padding: 8px 15px;
-    background-color: rgb(38, 38, 205);
-    animation: zoom 3s ease-in infinite, my-animation 4s;
-     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+  color: rgb(239, 232, 13);
+  border: 1px solid yellow;
+  border-radius: 20px;
+  padding: 8px 15px;
+  background-color: rgb(38, 38, 205);
+  animation: zoom 3s ease-in infinite, my-animation 4s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 input::placeholder {
-    color: grey;
-    font-style: italic;
-    text-align: center;
+  color: grey;
+  font-style: italic;
+  text-align: center;
 }
 h2 {
-    margin: 40px 0 10px 0;
-    color:white;
+  margin: 40px 0 10px 0;
+  color: white;
 }
-h3.correct, h3.incorrect {
-    color: rgb(46, 46, 222)!important;
-    font-family: Play!important;
-    font-size: 2.2rem!important;
+h3.correct,
+h3.incorrect {
+  color: rgb(46, 46, 222) !important;
+  font-family: Play !important;
+  font-size: 2.2rem !important;
 }
 
+ol {
+  color: rgb(239, 232, 13);
+  font-size: 2.2rem;
+  font-style: italic;
+  text-align: right;
+  background: rgba(139, 133, 142, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+#myAudio {
+  display: none;
+}
+
+#earth {
+    display: inline-block;
+    animation: pulse 5s infinite, spin 20s infinite ; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(20deg);
+    }
+    to {
+        transform:rotate(350deg);
+    }
+}
+@keyframes pulse {
+    from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
