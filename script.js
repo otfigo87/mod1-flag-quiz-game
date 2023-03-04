@@ -1,6 +1,8 @@
 import { data } from './data.js';
 // console.log(data)
 //! Select my elements
+let audio = document.querySelector("#myAudio");
+let muted = document.querySelector(".muted");
 let flagImgDiv = document.querySelector(".flag-img");
 let flagOptions = document.querySelector(".flag-options ul");
 let flagImg = document.querySelector(".flag-img img");
@@ -69,8 +71,6 @@ flagList.forEach(li => {
     });
 });
 
-
-
 //Check answer
 const checkAnswer = (rightAnswer) => {
     for( let i = 0; i < flagList.length; i++){
@@ -102,6 +102,8 @@ const showResult = () => {
         scoreBox.innerHTML = `<h2>Your score is: ${correctAnswers}</h2>`; 
 
         audio.setAttribute("src", "audio/soft-piano.mp3");
+        audio.play();
+        muted.innerHTML = "";
 
     } 
 }
@@ -115,7 +117,7 @@ let ol = document.createElement("ol")
 let highScores = [
   { name: "Adam", score: 5 },
   { name: "David", score: 7 },
-  { name: "Maria", score: 8 },
+  { name: "Maria", score: 9 },
   { name: "Nadia", score: 3 },
 ];
 
@@ -157,17 +159,26 @@ saveBtn.addEventListener("click", function(e) {
       "src",
       "audio/happy-day-113985.mp3"
     );
+    audio.play();
+    muted.innerHTML = "";
    
-
-
 })
 
 //Hide the audio Player / volume
-let audio = document.getElementById("myAudio");
 window.onload = function () {
-  audioPlayer.style.display = "none";
+    audio.volume = 0.1;
 };
-audio.volume = 0.2;
+//mute/unmute check if the audio playing
+muted.addEventListener("click", function() {
+    if(audio.paused){
+        audio.play()
+        muted.innerText = "🔊";
+    }
+    else {
+        audio.pause();
+        muted.innerText = "🔇";
+    }   
+})
 
 //Start The Game
 window.addEventListener("load", startGame);

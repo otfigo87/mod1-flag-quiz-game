@@ -320,3 +320,11 @@ ol {
         opacity   : 1;
     }
 }
+
+.muted {
+  position: absolute;
+  left: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
