@@ -24,13 +24,17 @@ Why not try it yourself? How many have you managed to get right?
 
  ## Technology Stack:
 
- [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)  
+ [![Index](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 
- [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)  
+ [![Style](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)  
 
  [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)  
 
+ [![Icons](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)]
+
 [![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)  
+
+[![Design](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)]   
 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)  
 
@@ -39,16 +43,16 @@ Why not try it yourself? How many have you managed to get right?
 ## Resources:
 
 * [MDN](https://developer.mozilla.org/en-US/)
-* [BG-AUDIO](https://pixabay.com/music/)
-* [BG-VIDEO](https://elements.envato.com/?cl=header)
+* [AUDIO](https://pixabay.com/music/)
+* [BACKGROUND-VIDEO](https://elements.envato.com/?cl=header)
 * [API-COUNTRIES](https://restcountries.com)
 * [EMOJIS](https://getemoji.com/)
 * [ANIMATIONS](https://www.w3schools.com/css/css3_animations.asp)
 
 
 ## Link:  
-  
-* [Play => live link](https://otfigo87.github.io/mod1-flag-quiz-game/)
+   
+   [Click HERE (live link)](https://otfigo87.github.io/mod1-flag-quiz-game/)
 
 ## Next Step:
 
