@@ -61,3 +61,7 @@ Why not try it yourself? How many have you managed to get right?
 
 Currently, my next step is to develop a mobile version of this game. As technology advances and more people rely on their mobile devices for daily tasks, it's important to ensure that my game is accessible on-the-go. 
 I am excited to take on this challenge and look forward to bringing our app to even more users through a mobile platform.
+
+## Feedback
+  
+  If you have any feedback, please reach out to me at aaotmane@gmail.com
