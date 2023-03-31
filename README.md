@@ -45,7 +45,6 @@ Why not try it yourself? How many have you managed to get right?
 
 ## Resources:
 
-* [MDN](https://developer.mozilla.org/en-US/)
 * [AUDIO](https://pixabay.com/music/)
 * [BACKGROUND-VIDEO](https://elements.envato.com/?cl=header)
 * [API-COUNTRIES](https://restcountries.com)
